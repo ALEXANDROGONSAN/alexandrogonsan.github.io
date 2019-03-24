@@ -1,0 +1,283 @@
+/*RESET
+-------------------------------------*/
+*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+body{
+    font-family: 'Open Sans', sans-serif; font-size: inherit;
+}
+input, select, iframe, button{border: none; font-family: 'Open Sans', sans-serif;}
+h1,h2,h3{magin: 0; padding: 0;}
+ol, ul{list-style: none;}
+
+
+
+/*GERAIS
+-------------------------------------*/
+.content{
+    width: 100%;
+}
+
+.row{
+    float: left;
+    width: 100%;
+}
+
+.imagem-col{
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.imagem-col img{
+    float: left;
+}
+
+.join-btn-2{
+    margin-left: 40%;
+    margin-bottom: 50px;
+    background: #c06f01;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.Texto1-imagem-inferior{
+    margin-left: 110px;
+    margin-bottom: 60px;
+}
+.Texto1-imagem-inferior h1{
+    text-align: center;
+    font-family: Roboto;
+    margin-bottom: 20px;
+}
+.Texto1-imagem-inferior p{
+    margin-left: -35px;
+}
+
+.imagem-col:nth-child(odd){
+    margin-right: 0;
+}
+
+/*HEADER
+-------------------------------------*/
+.header{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    z-index: 6;
+}
+.header .logo img{
+    max-width: 150px;
+    margin-left: 50%;
+    margin-top: 20px;
+}
+.header.fixed{
+    margin-left: 0;
+    /*
+    background: #c06f01;
+    */
+    background: #fff;
+}
+.header .image1 img{
+    /*
+    float: left;
+    margin-left: 20px;
+    margin-right: 60px;
+    */
+}
+.Texto1{
+    color: #666;
+}
+
+.subTexto1{
+    color: #fff;
+}
+.join-btn{
+    background: #fff;
+    color: #FF8C00;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.login{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.login-l{
+    color: #666;
+    text-decoration: none;
+}
+
+.login-l:hover{
+    
+}
+
+
+.section-header{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 38px;
+}
+/*FOOTER
+------------------------------------*/
+.footer{
+    background: #c06f01;
+    float: left;
+    width: 100%;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content{
+    margin-left: 30px;
+}
+.footer-col{
+    color: #fff;
+    width: 45%;
+    text-decoration: none;
+}
+.footer-col:hover{
+    text-decoration: underline;
+}
+    
+.footer-col:nth-child(odd){
+    margin-right: 0;
+    margin-left: 0;
+}
+.footer-col:last-of-type{
+    margin-right: 0;
+}
+
+@media (max-width: 1164px){
+    @media (min-width: 1080px){
+       .header .image1 img{
+
+        }        
+
+        .footer-col{
+            margin-right: 70px;
+            margin-left: 70px;
+        }
+    }
+}
+
+@media (max-width: 1079.9px){
+    @media (min-width: 1010.1px){
+        .footer-col{
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    }
+        
+    .header .image1 img{
+
+    }
+    
+}
+
+@media (max-width: 1010px){     
+    .header .image1 img{
+
+    }
+    
+    .footer-col{
+        margin-right: 30px;
+        margin-left: 30px;
+    }    
+}
+
+@media (min-width: 986.1px){
+    @media (max-width: 1010px){
+        .header .image1 img{
+
+        }
+    }
+}
+
+@media (min-width: 947px){
+    @media (max-width: 986px){
+        .header .image1 img{
+
+        }
+    }
+}
+
+@media (max-width: 887px){    
+    .header .image1 img{
+
+    }
+}
+
+@media (max-width: 800px){
+    .header .image1 img{
+
+    }
+    
+    .header .logo img{
+        margin-left: 40%;
+    }
+    
+    .footer-col{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+@media (min-width: 800.1px){
+
+}
+
+@media (max-width: 599px){/*734px*/
+    .header .image1 img{
+        width: 360px;
+        /*719=width da img
+        medido visualmente pelo css
+        para que se encaixasse perfeitamente
+        ...em toda a largura dessa resolução
+        */
+    }
+
+}
+
+@media (min-width: 1164.1px){
+    @media (max-width: 1343px){
+        .header .image1 img{
+
+        }
+
+        .footer-col{
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+    }
+}
+
+@media (min-width: 1343.1px){
+    .header .image1 img{
+
+    }
+
+    .footer-content{
+        margin-left: 100px;
+    }
+    .footer-col{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+
+/*AUXILIARES
+-------------------------------------*/
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+.fl-left{float: left;}
+.fl-right{float: right;}
